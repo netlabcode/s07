@@ -43,7 +43,7 @@ def serverOne():
 				h
     		)
 
-			#cursor.execute(" INSERT INTO s17m1(dtime, cb_ctrl, cb_res, f_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
+			cursor.execute(" INSERT INTO s17m1(dtime, cb_ctrl, cb_res, f_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
 			print(inserted_values)
 
