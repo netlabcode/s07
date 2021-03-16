@@ -43,9 +43,9 @@ def serverOne():
 				h
     		)
 
-			cursor.execute(" INSERT INTO s17m1(dtime, cb_ctrl, cb_res, f_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
+			#cursor.execute(" INSERT INTO s17m1(dtime, cb_ctrl, cb_res, f_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("1")
+			print(inserted_values)
 
 def serverTwo():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -70,9 +70,9 @@ def serverTwo():
         		g
     		)
 
-			cursor.execute(" INSERT INTO s17m2(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
+			#cursor.execute(" INSERT INTO s17m2(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("2")
+			print(inserted_values)
 
 
 
