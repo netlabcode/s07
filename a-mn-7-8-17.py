@@ -253,9 +253,9 @@ def emptyNet():
     info(os.system('ip addr add 100.0.0.99/24 dev s999'))
     info(os.system('ip link set s999 up'))
 
-    time.sleep(5)
+    #time.sleep(5)
 
-    info( net[ 's06db' ].cmd( 'python3 ascdb.py &amp' ) )
+    #info( net[ 's06db' ].cmd( 'python3 ascdb.py &amp' ) )
 
 
     CLI( net )
