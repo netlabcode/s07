@@ -84,6 +84,7 @@ def emptyNet():
     s07m7 = net.addHost('s07m7', ip='100.7.0.17', cls=CPULimitedHost, cpu=.1)
     s07m8 = net.addHost('s07m8', ip='100.7.0.18', cls=CPULimitedHost, cpu=.1)
     s07m9 = net.addHost('s07m9', ip='100.7.0.19', cls=CPULimitedHost, cpu=.1)
+    s07m10 = net.addHost('s07m10', ip='100.7.0.20', cls=CPULimitedHost, cpu=.1)
     s07cpc = net.addHost('s07cpc', ip='100.7.0.21')
     s07db = net.addHost('s07db', ip='100.7.0.22')
     s07gw = net.addHost('s07gw', ip='100.7.0.23')
@@ -132,7 +133,8 @@ def emptyNet():
     net.addLink(s07m6,s73, intfName1='s07m6-eth1', params1={'ip':'100.7.0.16/24'})
     net.addLink(s07m7,s73, intfName1='s07m7-eth1', params1={'ip':'100.7.0.17/24'})
     net.addLink(s07m8,s73, intfName1='s07m8-eth1', params1={'ip':'100.7.0.18/24'})
-    net.addLink(s07m9,s73, intfName1='s07m9-eth1', params1={'ip':'100.7.0.19/24'})  
+    net.addLink(s07m9,s73, intfName1='s07m9-eth1', params1={'ip':'100.7.0.19/24'})
+    net.addLink(s07m10,s73, intfName1='s07m10-eth1', params1={'ip':'100.7.0.20/24'})  
     net.addLink(s07cpc,s72)
     net.addLink(s07db,s72)
     net.addLink(s07gw,s71, intfName1='s07gw-eth1', params1={'ip':'100.7.0.23/24'})
@@ -174,6 +176,7 @@ def emptyNet():
     net.addLink(s07m7,s777, intfName1='s07m7-eth0', params1={'ip':'10.0.7.17/16'})
     net.addLink(s07m8,s777, intfName1='s07m8-eth0', params1={'ip':'10.0.7.18/16'})
     net.addLink(s07m9,s777, intfName1='s07m9-eth0', params1={'ip':'10.0.7.19/16'})
+    net.addLink(s07m10,s777, intfName1='s07m10-eth0', params1={'ip':'10.0.7.20/16'})
     net.addLink(s07gw,s777, intfName1='s07gw-eth0', params1={'ip':'10.0.7.23/16'})
     
     # Link Host Substation 8 to switch to external gateway
