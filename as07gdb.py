@@ -325,16 +325,16 @@ def serverTen():
 
 # Create two threads as follows
 try:
-   _thread.start_new_thread( serverOne, ( ) )
-   _thread.start_new_thread( serverTwo, ( ) )
-   _thread.start_new_thread( serverThree, ( ) )
-   _thread.start_new_thread( serverFour, ( ) )
+   #_thread.start_new_thread( serverOne, ( ) )
+   #_thread.start_new_thread( serverTwo, ( ) )
+   #_thread.start_new_thread( serverThree, ( ) )
+   #_thread.start_new_thread( serverFour, ( ) )
    _thread.start_new_thread( serverFive, ( ) )
    _thread.start_new_thread( serverSix, ( ) )
-   _thread.start_new_thread( serverSeven, ( ) )
-   _thread.start_new_thread( serverEight, ( ) )
+   #_thread.start_new_thread( serverSeven, ( ) )
+   #_thread.start_new_thread( serverEight, ( ) )
    _thread.start_new_thread( serverNine, ( ) )
-   _thread.start_new_thread( serverTen, ( ) )
+   #_thread.start_new_thread( serverTen, ( ) )
 
 except:
    print ("Error: unable to start thread")
