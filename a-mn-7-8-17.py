@@ -264,10 +264,22 @@ def emptyNet():
     info( net[ 's08m4' ].cmd( 'python3.6 as08m4.py &amp' ) )
     info( net[ 's08m5' ].cmd( 'python3.6 as08m5.py &amp' ) )
 
+    info( net[ 's07m1' ].cmd( 'python3.6 as07m1.py &amp' ) )
+    info( net[ 's07m2' ].cmd( 'python3.6 as07m2.py &amp' ) )
+    info( net[ 's07m3' ].cmd( 'python3.6 as07m3.py &amp' ) )
+    info( net[ 's07m4' ].cmd( 'python3.6 as07m4.py &amp' ) )
+    info( net[ 's07m5' ].cmd( 'python3.6 as07m5.py &amp' ) )
+    info( net[ 's07m6' ].cmd( 'python3.6 as07m6.py &amp' ) )
+    info( net[ 's07m7' ].cmd( 'python3.6 as07m7.py &amp' ) )
+    info( net[ 's07m8' ].cmd( 'python3.6 as07m8.py &amp' ) )
+    info( net[ 's07m9' ].cmd( 'python3.6 as07m9.py &amp' ) )
+    info( net[ 's07m10' ].cmd( 'python3.6 as07m10.py &amp' ) )
+
 
     time.sleep(2)
 
     info( net[ 's17gw' ].cmd( 'python3.6 as17gdb.py &amp' ) )
+    info( net[ 's08gw' ].cmd( 'python3.6 as08gdb.py &amp' ) )
 
 
     CLI( net )
