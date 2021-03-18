@@ -331,8 +331,8 @@ try:
    # clear_thread.start_new_thread( serverFour, ( ) )
    # clear _thread.start_new_thread( serverFive, ( ) )
    # clear _thread.start_new_thread( serverSix, ( ) )
-   _thread.start_new_thread( serverSeven, ( ) )
-   #_thread.start_new_thread( serverEight, ( ) )
+   # problem _thread.start_new_thread( serverSeven, ( ) )
+   _thread.start_new_thread( serverEight, ( ) )
    # clear _thread.start_new_thread( serverNine, ( ) )
    #_thread.start_new_thread( serverTen, ( ) )
 
@@ -341,3 +341,12 @@ except:
 
 while 1:
    pass
+
+"""
+Notes
+
+MU 7
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type bigint: "0.0"
+LINE 1: ...ALUES ('2021-03-18 09:33:59.371599','0','0','0.0','0.0','0')
+
+"""
