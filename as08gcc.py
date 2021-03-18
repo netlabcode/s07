@@ -35,7 +35,8 @@ def serverOne():
                         sc5.connect((HOST5, PORT2))
 
                         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sr:
-                            sr.connect((RHOST,PORTS2))
+                            sr.bind((RHOST,PORTS2))
+                            sr.listen()
                             conn2, addr2 = sr.accept()
                             with conn2:
                                 print('S2 from:',addr2)
