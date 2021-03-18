@@ -331,10 +331,10 @@ try:
    # clear_thread.start_new_thread( serverFour, ( ) )
    # clear _thread.start_new_thread( serverFive, ( ) )
    # clear _thread.start_new_thread( serverSix, ( ) )
-   # problem _thread.start_new_thread( serverSeven, ( ) )
-   _thread.start_new_thread( serverEight, ( ) )
+   _thread.start_new_thread( serverSeven, ( ) )
+   # problem _thread.start_new_thread( serverEight, ( ) )
    # clear _thread.start_new_thread( serverNine, ( ) )
-   #_thread.start_new_thread( serverTen, ( ) )
+   _thread.start_new_thread( serverTen, ( ) )
 
 except:
    print ("Error: unable to start thread")
@@ -348,5 +348,10 @@ Notes
 MU 7
 psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type bigint: "0.0"
 LINE 1: ...ALUES ('2021-03-18 09:33:59.371599','0','0','0.0','0.0','0')
+
+MU 8
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type bigint: "0.0"
+LINE 1: ...:53.915802','0','0','0.0','0.0','0.0','0.0','0.0',|||'0.0','0.0...
+
 
 """
