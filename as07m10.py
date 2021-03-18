@@ -16,7 +16,7 @@ PORT4 = 994
 
 
 #OPC ACCESS
-url = "opc.tcp://131.180.165.25:8899/freeopcua/server/"
+url = "opc.tcp://131.180.165.15:8899/freeopcua/server/"
 client = Client(url)
 client.connect()
 print("connected to OPC UA Server")
