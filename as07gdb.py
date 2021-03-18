@@ -325,15 +325,15 @@ def serverTen():
 
 # Create two threads as follows
 try:
-   # clear_thread.start_new_thread( serverOne, ( ) )
-   # clear_thread.start_new_thread( serverTwo, ( ) )
-   # clear_thread.start_new_thread( serverThree, ( ) )
-   # clear_thread.start_new_thread( serverFour, ( ) )
-   # clear _thread.start_new_thread( serverFive, ( ) )
-   # clear _thread.start_new_thread( serverSix, ( ) )
-   # problem _thread.start_new_thread( serverSeven, ( ) )
-   # problem _thread.start_new_thread( serverEight, ( ) )
-   # clear _thread.start_new_thread( serverNine, ( ) )
+   _thread.start_new_thread( serverOne, ( ) )
+   _thread.start_new_thread( serverTwo, ( ) )
+   _thread.start_new_thread( serverThree, ( ) )
+   _thread.start_new_thread( serverFour, ( ) )
+   _thread.start_new_thread( serverFive, ( ) )
+   _thread.start_new_thread( serverSix, ( ) )
+   _thread.start_new_thread( serverSeven, ( ) )
+   _thread.start_new_thread( serverEight, ( ) )
+   _thread.start_new_thread( serverNine, ( ) )
    _thread.start_new_thread( serverTen, ( ) )
 
 except:
@@ -354,9 +354,8 @@ psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type bigint:
 LINE 1: ...:53.915802','0','0','0.0','0.0','0.0','0.0','0.0',|||'0.0','0.0...
 
 MU 10
-File "as07gdb.py", line 297, in serverTen
-sc1.connect((HOST10, PORT1))
-ConnectionRefusedError: [Errno 111] Connection refused
-Unhandled exception in thread started by <function serverSeven at 0x7fa013a2a598
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type bigint: "0.0"
+LINE 1: ...:26.283638','0','0','0.0','0.0','0.0','0.0','0.0',|||'0.0','0.0...
+
 
 """
