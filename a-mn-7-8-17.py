@@ -276,7 +276,7 @@ def emptyNet():
     info( net[ 's07m7' ].cmd( 'python3.6 as07m7.py &amp' ) )
     info( net[ 's07m8' ].cmd( 'python3.6 as07m8.py &amp' ) )
     info( net[ 's07m9' ].cmd( 'python3.6 as07m9.py &amp' ) )
-    info( net[ 's07m10' ].cmd( 'python3.6 as07m10.py &amp' ) )
+    #info( net[ 's07m10' ].cmd( 'python3.6 as07m10.py &amp' ) )
 
 
     time.sleep(2)

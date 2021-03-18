@@ -331,7 +331,7 @@ try:
    # clear_thread.start_new_thread( serverFour, ( ) )
    # clear _thread.start_new_thread( serverFive, ( ) )
    # clear _thread.start_new_thread( serverSix, ( ) )
-   _thread.start_new_thread( serverSeven, ( ) )
+   # problem _thread.start_new_thread( serverSeven, ( ) )
    # problem _thread.start_new_thread( serverEight, ( ) )
    # clear _thread.start_new_thread( serverNine, ( ) )
    _thread.start_new_thread( serverTen, ( ) )
@@ -347,11 +347,16 @@ Notes
 
 MU 7
 psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type bigint: "0.0"
-LINE 1: ...ALUES ('2021-03-18 09:33:59.371599','0','0','0.0','0.0','0')
+LINE 1: ...ALUES ('2021-03-18 09:33:59.371599','0','0','0.0',|||'0.0','0')
 
 MU 8
 psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type bigint: "0.0"
 LINE 1: ...:53.915802','0','0','0.0','0.0','0.0','0.0','0.0',|||'0.0','0.0...
 
+MU 10
+File "as07gdb.py", line 297, in serverTen
+sc1.connect((HOST10, PORT1))
+ConnectionRefusedError: [Errno 111] Connection refused
+Unhandled exception in thread started by <function serverSeven at 0x7fa013a2a598
 
 """
