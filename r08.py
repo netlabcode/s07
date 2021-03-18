@@ -15,28 +15,28 @@ cursor = conn.cursor()
 #Value id
 cursor.execute('''SELECT value from objects WHERE id=67''')
 result = cursor.fetchone()
-record1 = result[0]
+global record1 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=68''')
 result = cursor.fetchone()
-record2 = result[0]
+global record2 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=69''')
 result = cursor.fetchone()
-record3 = result[0]
+global record3 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=70''')
 result = cursor.fetchone()
-record4 = result[0]
+global record4 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=71''')
 result = cursor.fetchone()
-record5 = result[0]
+global record5 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=72''')
 result = cursor.fetchone()
-record6 = result[0]
+global record6 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=73''')
 result = cursor.fetchone()
-record7 = result[0]
+global record7 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=74''')
 result = cursor.fetchone()
-record8 = result[0]
+global record8 = result[0]
 
 #Value code
 cursor.execute('''SELECT code from objects WHERE id=67''')
@@ -83,6 +83,8 @@ def server08():
                     #Format: mu01_id+value
                     cursor.execute('''SELECT value from objects WHERE id=67''')
                     result = cursor.fetchone()
+                    print(result)
+                    print(record1)
                     if record1 != result[0]:
                         print(result[0])
                         string = "mu01_"+str(r1)+"+"+str(result[0])
