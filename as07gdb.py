@@ -327,8 +327,8 @@ def serverTen():
 try:
    # clear_thread.start_new_thread( serverOne, ( ) )
    # clear_thread.start_new_thread( serverTwo, ( ) )
-   _thread.start_new_thread( serverThree, ( ) )
-   #_thread.start_new_thread( serverFour, ( ) )
+   # clear_thread.start_new_thread( serverThree, ( ) )
+   _thread.start_new_thread( serverFour, ( ) )
    # clear _thread.start_new_thread( serverFive, ( ) )
    # clear _thread.start_new_thread( serverSix, ( ) )
    #_thread.start_new_thread( serverSeven, ( ) )
