@@ -64,6 +64,11 @@ cursor.execute('''SELECT code from objects WHERE id=74''')
 result = cursor.fetchone()
 r8 = result[0]
 
+print(record1)
+print(record8)
+print(r1)
+print(r8)
+
 # Define a function for the thread
 def server08():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s1:
