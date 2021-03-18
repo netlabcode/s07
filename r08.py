@@ -103,63 +103,63 @@ def server08():
 
                     cursor.execute('''SELECT value from objects WHERE id=69''')
                     result = cursor.fetchone()
-                    if record1 != result[0]:
+                    if record3 != result[0]:
                         print(result[0])
                         string = "mu03_"+str(r3)+"+"+str(result[0])
                         datax = string.encode()
                         s1.sendall(datax)
                         print(string)
-                        record1 = result[0]
+                        record3 = result[0]
                         
                     cursor.execute('''SELECT value from objects WHERE id=70''')
                     result = cursor.fetchone()
-                    if record2 != result[0]:
+                    if record4 != result[0]:
                         print(result[0])
                         string = "mu04_"+str(r4)+"+"+str(result[0])
                         datax = string.encode()
                         s1.sendall(datax)
                         print(string)
-                        record2 = result[0]
+                        record4 = result[0]
                     
                     cursor.execute('''SELECT value from objects WHERE id=71''')
                     result = cursor.fetchone()
-                    if record1 != result[0]:
+                    if record5 != result[0]:
                         print(result[0])
                         string = "mu04_"+str(r5)+"+"+str(result[0])
                         datax = string.encode()
                         s1.sendall(datax)
                         print(string)
-                        record1 = result[0]
+                        record5 = result[0]
                         
                     cursor.execute('''SELECT value from objects WHERE id=72''')
                     result = cursor.fetchone()
-                    if record2 != result[0]:
+                    if record6 != result[0]:
                         print(result[0])
                         string = "mu05_"+str(r6)+"+"+str(result[0])
                         datax = string.encode()
                         s1.sendall(datax)
                         print(string)
-                        record2 = result[0]
+                        record6 = result[0]
 
                     cursor.execute('''SELECT value from objects WHERE id=73''')
                     result = cursor.fetchone()
-                    if record1 != result[0]:
+                    if record7 != result[0]:
                         print(result[0])
                         string = "mu05_"+str(r7)+"+"+str(result[0])
                         datax = string.encode()
                         s1.sendall(datax)
                         print(string)
-                        record1 = result[0]
+                        record7 = result[0]
                         
                     cursor.execute('''SELECT value from objects WHERE id=74''')
                     result = cursor.fetchone()
-                    if record2 != result[0]:
+                    if record8 != result[0]:
                         print(result[0])
                         string = "mu05_"+str(r8)+"+"+str(result[0])
                         datax = string.encode()
                         s1.sendall(datax)
                         print(string)
-                        record2 = result[0]
+                        record8 = result[0]
 
 
 
