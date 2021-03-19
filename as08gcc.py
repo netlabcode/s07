@@ -49,7 +49,7 @@ def serverOne():
                                     part1,part2 = data2new.split("_")
                                     print(part2)
                                     part2x = part2.encode()
-                                    #sc1.sendall(part2x)
+                                    sc1.sendall(part2x)
                                 elif 'mu02' in data2new:
                                     part1,part2 = data2new.split("_")
                                     print(part2)
