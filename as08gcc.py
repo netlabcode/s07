@@ -13,7 +13,7 @@ HOST5 = '100.8.0.15'
 RHOST = '131.180.165.21'
 
 PORT2 = 994
-PORTS2 = 887
+PORTS2 = 8808
 
 
 
@@ -72,7 +72,7 @@ def serverOne():
                                     sc5.sendall(part2x)
                                 else:
                                     print(".")
-                                time.sleep(1)
+                                #time.sleep(1)
 
                                             
                                             

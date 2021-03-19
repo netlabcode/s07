@@ -68,11 +68,10 @@ def serverXMUCC():
 								print(part2)
 								part2x = part2.encode()
 								sx5.sendall(part2x)
-
 							else:
 								print(".")
 
-								time.sleep(1)
+								#time.sleep(1)
 								#sx2.close()
 												
 
