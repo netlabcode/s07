@@ -54,17 +54,17 @@ def serverOne():
                                     part1,part2 = data2new.split("_")
                                     print(part2)
                                     part2x = part2.encode()
-                                    #sc2.sendall(part2x)
+                                    sc2.sendall(part2x)
                                 elif 'mu03' in data2new:
                                     part1,part2 = data2new.split("_")
                                     print(part2)
                                     part2x = part2.encode()
-                                    #sc3.sendall(part2x)
+                                    sc3.sendall(part2x)
                                 elif 'mu04' in data2new:
                                     part1,part2 = data2new.split("_")
                                     print(part2)
                                     part2x = part2.encode()
-                                    #sc4.sendall(part2x)
+                                    sc4.sendall(part2x)
                                 elif 'mu05' in data2new:
                                     part1,part2 = data2new.split("_")
                                     print(part2)
