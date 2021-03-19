@@ -72,7 +72,7 @@ def serverOne():
                                     sc5.sendall(part2x)
                                 else:
                                     print(".")
-                                time.sleep(5)
+                                time.sleep(1)
 
                                             
                                             
