@@ -82,7 +82,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s1:
                     print(result[0])
                     string = "mu01_"+str(r1)+"+"+str(result[0])
                     datax = string.encode()
-                    s1.sendall(datax)
+                    #s1.sendall(datax)
                     print(string)
                     record1 = result[0]
 
