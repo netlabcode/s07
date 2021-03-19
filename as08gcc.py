@@ -43,6 +43,8 @@ def serverOne():
                                 #recive data from server A
                                 data2 = sr.recv(1024)
                                 data2new = data2.decode("utf-8")
+                                print(data2)
+                                print(data2new)
                                 if 'mu01' in data2new:
                                     part1,part2 = data2new.split("_")
                                     print(part2)
@@ -70,6 +72,7 @@ def serverOne():
                                     sc5.sendall(part2x)
                                 else:
                                     print(".")
+                                time.sleep(5)
 
                                             
                                             
