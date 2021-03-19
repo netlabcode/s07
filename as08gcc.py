@@ -35,16 +35,16 @@ def serverOne():
                         sc5.connect((HOST5, PORT2))
 
                         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sr:
-                            sr.bind((RHOST,PORTS2))
-                            sr.listen()
-                            conn2, addr2 = sr.accept()
-                            with conn2:
-                                print('S2 from:',addr2)
+                            sr.connect((RHOST,PORTS2))
+                            #sr.listen()
+                            #conn2, addr2 = sr.accept()
+                            with sr:
+                                #print('S2 from:',addr2)
                                 while True:
                                     b = 1
                                     while b < 6:
                                         #recive data from server A
-                                        data2 = conn2.recv(1024)
+                                        data2 = sr.recv(1024)
                                         data2new = data2.decode("utf-8")
                                         if 'mu01' in data2new:
                                             part1,part2 = data2new.split("_")
