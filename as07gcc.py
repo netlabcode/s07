@@ -17,8 +17,8 @@ HOST9 = '100.7.0.19'
 HOST10 = '100.7.0.20'
 RHOST = '131.180.165.21'
 
-PORT2 = 993
-PORTS2 = 887
+PORT2 = 994
+PORTS2 = 8807
 
 
 
@@ -38,94 +38,88 @@ def serverOne():
                     
                     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc5:
                         sc5.connect((HOST5, PORT2))
-                        
+
                         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc6:
                             sc6.connect((HOST6, PORT2))
-                           
+
                             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc7:
                                 sc7.connect((HOST7, PORT2))
-                                
+
                                 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc8:
                                     sc8.connect((HOST8, PORT2))
 
                                     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc9:
-                                        sc9.connect((HOST6, PORT2))
+                                        sc9.connect((HOST9, PORT2))
 
                                         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc10:
                                             sc10.connect((HOST10, PORT2))
-                                            
+                                        
                                             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sr:
                                                 sr.connect((RHOST,PORTS2))
-                                                sr.listen()
-                                                conn2, addr2 = sr.accept()
-                                                with conn2:
-                                                    print('S2 from:',addr2)
-                                                    while True:
-                                                        b = 1
-                                                        while b < 6:
-                                                            #recive data from server A
-                                                            data2 = conn2.recv(1024)
-                                                            data2new = data2.decode("utf-8")
-                                                            if 'mu01' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc1.sendall(part2x)
-                                                            elif 'mu02' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc2.sendall(part2x)
-                                                            elif 'mu03' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc3.sendall(part2x)
-                                                            elif 'mu04' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc4.sendall(part2x)
-                                                            elif 'mu05' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc5.sendall(part2x)
-                                                            elif 'mu06' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc6.sendall(part2x)
-                                                            elif 'mu07' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc7.sendall(part2x)
-                                                            elif 'mu08' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc8.sendall(part2x)
-                                                            elif 'mu09' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc9.sendall(part2x)
-                                                            elif 'mu10' in data2new:
-                                                                part1,part2 = data2new.split("_")
-                                                                print(part2)
-                                                                part2x = part2.encode()
-                                                                sc10.sendall(part2x)
-                                                            else:
-                                                                print(".")
+                                                b = 1
+                                                while b < 6:
+                                                    #recive data from server A
+                                                    data2 = sr.recv(1024)
+                                                    data2new = data2.decode("utf-8")
+                                                    print(data2)
+                                                    print(data2new)
+                                                    if 'mu01' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc1.sendall(part2x)
+                                                    elif 'mu02' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc2.sendall(part2x)
+                                                    elif 'mu03' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc3.sendall(part2x)
+                                                    elif 'mu04' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc4.sendall(part2x)
+                                                    elif 'mu05' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc5.sendall(part2x)
+                                                    elif 'mu06' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc6.sendall(part2x)
+                                                    elif 'mu07' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc7.sendall(part2x)
+                                                    elif 'mu08' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc8.sendall(part2x)
+                                                    elif 'mu09' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc9.sendall(part2x)
+                                                    elif 'mu10' in data2new:
+                                                        part1,part2 = data2new.split("_")
+                                                        print(part2)
+                                                        part2x = part2.encode()
+                                                        sc10.sendall(part2x)
+                                                    else:
+                                                        print(".")
+                                                    #time.sleep(1)
 
-                                                            #send data to server C
-                                                            #sc2.sendall(data2)
-                                                            #sc2B.sendall(data2)
+                                            
+                                            
 							
-
-						
-
 # Create two threads as follows
 try:
    _thread.start_new_thread( serverOne, ( ) )
