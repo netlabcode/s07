@@ -160,7 +160,7 @@ def serverFour():
             )
 
             cursor.execute(
-                " INSERT INTO s07m4(dtime, cb_ctrl, cb_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap_ctrl, tap_mode, tap_res, 19_cb_ctrl, 19_cb_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+                " INSERT INTO s07m4(dtime, cb_ctrl, cb_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap_ctrl, tap_mode, tap_res, a_cb_ctrl, a_cb_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
             print(4)
