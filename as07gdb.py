@@ -53,7 +53,7 @@ def serverOne():
                 " INSERT INTO s07m1(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(strval1)
+            print(1)
 
 
 def serverTwo():
@@ -90,7 +90,7 @@ def serverTwo():
                 " INSERT INTO s07m2(dtime, cb_ctrl, cb_res, f_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap, tap_ctrl, tap_mode, tap_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(strval1)
+            print(2)
 
 
 def serverThree():
@@ -127,7 +127,7 @@ def serverThree():
                 " INSERT INTO s07m3(dtime, cb_ctrl, cb_res, f_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap, tap_ctrl, tap_mode, tap_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(strval1)
+            print(3)
 
 
 def serverFour():
@@ -163,7 +163,7 @@ def serverFour():
                 " INSERT INTO s07m4(dtime, cb_ctrl, cb_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap_ctrl, tap_mode, tap_res, 19_cb_ctrl, 19_cb_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(strval1)
+            print(4)
 
 
 def serverFive():
