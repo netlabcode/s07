@@ -184,7 +184,7 @@ def serverTwo():
 						val10.set_value(value, ua.VariantType.Int16)
 						print('Value 305 set to:',value)
 					elif check == 829:
-						val10.set_value(value, ua.VariantType.Int16)
+						val11.set_value(value, ua.VariantType.Int16)
 						print('Value 829 set to:',value)
 					else:
 							print(".")
@@ -244,7 +244,7 @@ def serverTwoCC():
 						val10.set_value(value, ua.VariantType.Int16)
 						print('Value 305 set to:',value)
 					elif check == 829:
-						val10.set_value(value, ua.VariantType.Int16)
+						val11.set_value(value, ua.VariantType.Int16)
 						print('Value 829 set to:',value)
 					else:
 							print(".")
