@@ -281,9 +281,11 @@ def emptyNet():
 
     time.sleep(2)
 
+    """
     info( net[ 's17gw' ].cmd( 'python3.6 as17gdb.py &amp' ) )
     info( net[ 's08gw' ].cmd( 'python3.6 as08gdb.py &amp' ) )
     info( net[ 's07gw' ].cmd( 'python3.6 as07gdb.py &amp' ) )
+    """
 
 
     CLI( net )
