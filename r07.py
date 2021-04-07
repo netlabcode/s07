@@ -19,7 +19,7 @@ record1 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=52''')
 result = cursor.fetchone()
 record2 = result[0]
-cursor.execute('''SELECT value from objects WHERE id=53''')
+cursor.execute('''SELECT valueb from objects WHERE id=53''')
 result = cursor.fetchone()
 record3 = result[0]
 cursor.execute('''SELECT value from objects WHERE id=54''')
@@ -145,7 +145,7 @@ try:
                         print(string)
                         record2 = result[0]
 
-                    cursor.execute('''SELECT value from objects WHERE id=53''')
+                    cursor.execute('''SELECT valueb from objects WHERE id=53''')
                     result = cursor.fetchone()
                     if record3 != result[0]:
                         print(result[0])
